@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & App Background */
+html, body, [data-testid="stAppViewContainer"] {
+    background: linear-gradient(180deg, #f0f4f8 0%, #e8f1f7 50%, #f5f7fa 100%) !important;
+    min-height: 100vh;
+}
+
+
+/* Main Container - Beautiful Gradient */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background: transparent !important;
+    min-height: 100vh;
+}
+
+/* Title Styling - Elegant Gradient */
+h1 {
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 50%, #005fa3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    margin-bottom: 1rem !important;
+    text-align: center;
+    letter-spacing: -2px;
+    text-shadow: 0 2px 10px rgba(0, 212, 255, 0.1);
+}
+
+/* Metric Cards - Modern Glass Design */
+div[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 1.8rem;
+    color: #1a1a2e;
+    box-shadow: 0 10px 40px rgba(0, 99, 204, 0.08), 0 0 0 1px rgba(0, 212, 255, 0.05);
+    border: 2px solid rgba(0, 212, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: relative;
+}
+
+div[data-testid="stMetric"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00d4ff, #0099cc, transparent);
+    border-radius: 20px 20px 0 0;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15), 0 0 0 1px rgba(0, 212, 255, 0.1);
+    border-color: rgba(0, 212, 255, 0.2);
+}
+
+div[data-testid="stMetric"] label {
+    color: #6b7c99 !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+div[data-testid="stMetric"] div[data-testid="stMetricValue"],
+div[data-testid="stMetric"] div[data-testid="stMetricValue"] span {
+    color: #0099cc !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    font-size: 2.2rem !important;
+    font-weight: 900 !important;
+    margin-top: 0.8rem;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: block !important;
+}
+
+div[data-testid="stMetric"] {
+    min-width: 240px !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+/* Section Titles - Modern Style */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    border-left: 6px solid #00d4ff;
+    padding-left: 18px;
+    padding-bottom: 12px;
+    margin: 3rem 0 1.8rem 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Chart Subheader Titles */
+h2 {
+    color: black !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+}
+
+/* Divider - Elegant */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), transparent);
+    margin: 3rem 0;
+}
+
+/* Sidebar Styling - Dark Modern */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0f2e51 0%, #1a4d7a 100%) !important;
+    border-right: 2px solid rgba(0, 212, 255, 0.1);
+}
+
+[data-testid="stSidebar"] h1 {
+    color: #00d4ff !important;
+    -webkit-text-fill-color: #00d4ff !important;
+    background: none !important;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] div[role="button"],
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] select,
+[data-testid="stSidebar"] option,
+[data-testid="stSidebar"] span {
+    color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] select,
+[data-testid="stSidebar"] div[role="button"] {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+[data-testid="stSidebar"] .st-bb {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-testid="stSidebar"] label {
+    color: #e0f4ff !important;
+    font-weight: 700 !important;
+    margin-top: 1.5rem !important;
+    font-size: 0.95rem !important;
+}
+
+/* Button Styling - Modern */
+.stButton > button {
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.9rem 2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+}
+
+/* Expander Styling */
+.streamlit-expanderHeader {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7fb 100%);
+    border-radius: 14px;
+    border: 2px solid rgba(0, 212, 255, 0.1);
+    color: #000000 !important;
+}
+
+.streamlit-expanderHeader * {
+    color: #000000 !important;
+}
+
+/* Text Styling */
+.stCaption {
+    color: #0099cc !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+}
+
+.stWarning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border-left: 5px solid #ffc107;
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 2px solid rgba(255, 193, 7, 0.2);
+}
+
+.stError {
+    background: linear-gradient(135deg, rgba(255, 87, 51, 0.15) 0%, rgba(255, 87, 51, 0.05) 100%);
+    border-left: 5px solid #ff5733;
+    border-radius: 12px;
+    padding: 1.2rem;
+    border: 2px solid rgba(255, 87, 51, 0.2);
+}
