@@ -46,5 +46,5 @@ It demonstrates the full data workflow — from data cleaning to interactive das
 ---
 
 ## 📈 Dashboard Preview
+<img width="1918" height="975" alt="image" src="https://github.com/user-attachments/assets/f365fa43-762a-4963-afbe-b89ca68f7b21" />
 
-_Add your dashboard screenshot here_
